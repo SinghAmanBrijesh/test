@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-1 {
+            background-color: rgb(0, 0, 0);
+            width: 300px;
+            height: 550px;
+            position: relative;
+            padding: 5px 5px;
+            display: flex;
+            margin-top: 5%;
+            flex-direction: column;
+            margin-left: 10px;
+            animation-name: a;
+            animation-duration: 14s;
+        }
+        
+        .box-3 {
+            background-color: rgb(0, 0, 0);
+            width: 300px;
+            height: 550px;
+            display: flex;
+            margin-top: 5%;
+            flex-direction: column;
+            position: relative;
+            padding: 5px 5px;
+            margin-left: 20px;
+            animation-name: a;
+            animation-duration: 14s;
+        }
+        
+        .box-2 {
+            background-color: rgb(0, 0, 0);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            height: 550px;
+            padding: 5px 5px;
+            position: relative;
+            margin-top: 5%;
+            margin-left: 20px;
+            animation-name: a;
+            animation-duration: 14s;
+        }
+        
+        @keyframes a {
+            0% {
+                background-color: rgb(82, 57, 57);
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: rgb(141, 15, 120);
+                right: 200px;
+                top: 0px;
+            }
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: rgb(109, 94, 94);
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+        .box-4 {
+            background-color: rgb(0, 0, 0);
+            width: 300px;
+            height: 40px;
+            margin: auto;
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+            padding-top: 15px;
+            font-size: 30px;
+        }
+        
+        h1 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        
+        h2 {
+            color: rgb(163, 163, 9);
+            margin: 20px;
+        }
+        
+        p {
+            color: rgb(7, 7, 7);
+            font-size: 16px;
+            margin: 8px;
+            text-align: center;
+        }
+        
+        div>p {
+            background-color: rgb(0, 255, 234);
+        }
+        
+        #box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 70px;
+            margin-top: -9 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-4">
+        Full Stack Mern Development
+    </div>
+    <div id="box">
+
+        <div class="box-1">
+            <h1>Front End Technologies</h1>
+            <h2>Must have Technologies</h2>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <h2>
+                Select one of these
+            </h2>
+            <p>React</p>
+            <p>Angular</p>
+            <p>Vue</p>
+            <p>Backbone.js</p>
+        </div>
+        <div class="box-2">
+            <h1>Back End Technologies</h1>
+            <h2>Select one of these</h2>
+            <p>JavaScript (Node.js)</p>
+            <p>PHP (Laravel)</p>
+            <p>JAVA (Spring)</p>
+            <p>Python (Django)</p>
+            <h2>Database(Select One)</h2>
+            <p>MongoDB</p>
+            <p>Mysql</p>
+            <p>Oracle</p>
+            <p>PostgreSQL</p>
+        </div>
+        <div class="box-3">
+            <h1>Other tools and</h1>
+            <h2> Technologies</h2>
+            <p>Redis Cache</p>
+            <p>Postman</p>
+            <p>Git</p>
+            <p>Boostrap</p>
+            <p>JQuery</p>
+            <p>Sass</p>
+            <p>Firebase</p>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
